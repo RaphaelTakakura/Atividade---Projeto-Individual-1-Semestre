@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title> Cadastro </title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+</head>
+
+<body>
+
+    <div class="header">
+        <span style="font-size: 30px; padding: 10px; color: rgb(230, 2, 127); font-weight: bold"> < <span style="color:white"> game-dev-ark </span> > </span>
+        
+        <ul class="navbar">
+            <li>
+                <a href="index.html"> Home </a>
+            </li>
+            <li>
+                <a href=""> Artigos </a>
+            </li>
+            <li>
+                <span style="color: rgb(230, 2, 127); font-weight: bold; cursor: default;"> Cadastro </span>
+            </li>
+            <li>
+                <a href="login.html"> Login </a>
+            </li>
+        </ul>
+
+    </div>
+
+    <div class="formulario">
+        <span style="font-size: 30px; padding: 10px; color: rgb(230, 2, 127);"> < <span style="color:white"> Cadastro </span> > </span>
+        <br>
+        <span> Usuário : </span>
+        <input type="text" id="inp_usuario">
+        <br>
+        <span> E-mail : </span>
+        <input type="text" id="inp_email">
+        <br>
+        <span> Senha : </span>
+        <input type="password" id="inp_senha">
+        <br>
+    
+        <div class="cadastro_interesses">
+            
+            <h2> Interesses Principais: </h2>
+
+            <div class="cadastro_interesses_individual" style="background-color: rgb(0, 191, 197);">
+
+                <label for="cb_tecnologia"> Tecnologia </label>
+                <input type="checkbox" id="cb_tecnologia">
+
+            </div>
+
+            <div class="cadastro_interesses_individual" style="background-color: rgb(0, 219, 0);">
+
+                <label for="cb_noticias"> Notícias </label>
+                <input type="checkbox" id="cb_noticias"> 
+
+            </div>
+            
+            <div class="cadastro_interesses_individual" style="background-color: rgb(97, 0, 153);">
+
+                <label for="cb_design"> Game Design </label>
+                <input type="checkbox" id="cb_design">
+
+            </div>         
+
+        </div>
+        
+        <button onclick=""> Cadastrar </button>
+    </div>
+    
+</body>
+
+</html>
