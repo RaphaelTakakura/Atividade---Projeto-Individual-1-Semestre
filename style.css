@@ -41,6 +41,8 @@ button {
     width: 340px;
     height: fit-content;
     padding: 30px;
+    border-radius: 30px;
+    corner-shape: bevel;
 }
 
 .cadastro_interesses{
