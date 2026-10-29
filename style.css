@@ -84,6 +84,45 @@ button {
     align-self: flex-end;
 }
 
+.home_texto {
+
+    margin: 20px;
+}
+
+.home_artigos {
+
+    display: flex;
+    width: 90%;
+    height: fit-content;
+    padding: 20px;
+    margin: 20px;
+    justify-self: center;
+    background-color: rgb(8, 0, 80);
+    border-radius: 10px;
+    corner-shape: notch;
+}
+
+.home_artigos_titulo {
+
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 20px;
+    align-items: center;
+}
+
+.home_artigos_lista {
+
+    display: flex;
+    width: 80%;
+    height: fit-content;
+    padding: 20px;
+    margin: 20px;
+    align-self: flex-start;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .navbar {
 
     display: flex;
