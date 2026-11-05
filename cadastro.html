@@ -41,12 +41,16 @@
         <br>
         <span> Usuário : </span>
         <input type="text" id="inp_usuario">
+        <div id="div_erro_usuario" class="texto_erro"></div>
         <br>
         <span> E-mail : </span>
         <input type="text" id="inp_email">
+        <div id="div_erro_email" class="texto_erro"></div>
         <br>
         <span> Senha : </span>
         <input type="password" id="inp_senha">
+        <span style="font-size: 15px; padding-left: 15px; padding-right: 15px;"> *Senha deve incluir ao menos um caractere especial, letra maiúscula, minúscula e mais de 10 dígitos.</span>
+        <div id="div_erro_senha" class="texto_erro"></div>
         <br>
     
         <div class="cadastro_interesses">
@@ -56,30 +60,98 @@
             <div class="cadastro_interesses_individual" style="background-color: rgb(0, 191, 197);">
 
                 <label for="cb_tecnologia"> Tecnologia </label>
-                <input type="checkbox" id="cb_tecnologia">
+                <input type="checkbox" id="cb_tecnologia" value="1">
 
             </div>
 
             <div class="cadastro_interesses_individual" style="background-color: rgb(0, 219, 0);">
 
                 <label for="cb_noticias"> Notícias </label>
-                <input type="checkbox" id="cb_noticias"> 
+                <input type="checkbox" id="cb_noticias" value="1"> 
 
             </div>
             
             <div class="cadastro_interesses_individual" style="background-color: rgb(97, 0, 153);">
 
                 <label for="cb_design"> Game Design </label>
-                <input type="checkbox" id="cb_design">
+                <input type="checkbox" id="cb_design" value="1">
 
             </div>         
 
         </div>
         
-        <button onclick=""> Cadastrar </button>
+        <button onclick="Cadastrar()"> Cadastrar </button>
     
     </div>
     
 </body>
 
 </html>
+
+<script>
+
+    let senha_valida = false
+
+    function Cadastrar() {
+        
+        let usuario = inp_usuario.value
+        let email = inp_email.value
+        let senha = inp_senha.value
+        let tecnologia = cb_tecnologia.value
+        let noticias = cb_noticias.value
+        let design = cb_design.value
+
+        let email_valido = email.includes('@') && email.includes('.') && email.indexOf('@') != email.indexOf('.') - 1
+
+        ValidarSenha(senha)
+
+        div_erro_email.innerHTML = ``
+        div_erro_senha.innerHTML = ``
+        div_erro_usuario.innerHTML = ``
+
+        if(usuario == '') {
+
+            div_erro_usuario.innerHTML = 'INSIRA UM USUÁRIO'
+        }
+
+        else if (email == '') {
+
+            div_erro_email.innerHTML = 'INSIRA UM E-MAIL'
+        }
+
+        else if (email_valido == false) {
+
+            div_erro_email.innerHTML = 'INSIRA UM E-MAIL VÁLIDO'
+        }
+
+        else if (senha == '') {
+
+            div_erro_senha.innerHTML = 'INSIRA UMA SENHA'
+        }
+
+        else if (senha_valida == false) {
+
+            div_erro_senha.innerHTML = 'INSIRA UMA SENHA VÁLIDA'
+        }
+
+        else {
+
+            alert('Cadastro efetuado com sucesso!')
+            senha_valida = false
+        }
+    }
+
+    function ValidarSenha(senha) {
+
+        let caracteres_especiais = '!@#$%¨&*'
+
+        for(i = 0; i < senha.length; i++) {
+
+            if(caracteres_especiais.indexOf(senha[i]) != -1 && senha.length >= 10 && senha.toLowerCase() != senha && senha.toUpperCase() != senha) {
+
+                senha_valida = true
+            }
+        }   
+    }
+
+</script>

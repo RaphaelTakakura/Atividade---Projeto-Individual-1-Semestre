@@ -32,12 +32,12 @@ button {
 .formulario {
 
     display: flex;
+    flex-flow: column nowrap;
     justify-self: center;
     margin-top: 5%;
     background-color: rgb(8, 0, 80);
     color: white;
     align-items: center;
-    flex-flow: column nowrap;
     width: 340px;
     height: fit-content;
     padding: 30px;
@@ -100,6 +100,12 @@ button {
     background-color: rgb(8, 0, 80);
     border-radius: 10px;
     corner-shape: notch;
+}
+
+.texto_erro {
+
+    color: red;
+    font-weight: bold;
 }
 
 .home_artigos_titulo {
