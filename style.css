@@ -7,11 +7,25 @@ body {
     padding: 0;
 }
 
-.formulario input {
+p {
+    margin: 20px;
+}
+
+.formulario_login input {
 
     font-family: Chakra Petch;
     justify-items: center;
     width: 80%;
+    height: 30px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.formulario_cadastro input {
+
+    font-family: Chakra Petch;
+    justify-items: center;
+    width: 60%;
     height: 30px;
     padding: 10px;
     margin: 10px;
@@ -29,7 +43,7 @@ button {
     border-color: white;
 }
 
-.formulario {
+.formulario_login {
 
     display: flex;
     flex-flow: column nowrap;
@@ -45,6 +59,23 @@ button {
     corner-shape: bevel;
 }
 
+.formulario_cadastro {
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-self: center;
+    justify-content: flex-start;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: rgb(8, 0, 80);
+    color: white;
+    width: fit-content;
+    height: fit-content;
+    padding: 30px;
+    border-radius: 30px;
+    corner-shape: bevel;
+}
+
 .cadastro_interesses{
     
     display: flex;
@@ -53,10 +84,20 @@ button {
     align-items: center;
     background-color: rgb(230, 2, 127);
     padding: 20px;
-    margin-bottom: 20px;
-    width: 80%;
+    margin: 20px;
+    width: 50%;
     border-style: solid;
     border-width: 2px;
+    border-radius: 30px;
+    corner-shape: bevel;
+}
+
+.container_cadastro {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .cadastro_interesses_individual {
@@ -84,14 +125,19 @@ button {
     align-self: flex-end;
 }
 
-.home_texto {
+.classe_padronizacao {
 
-    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: 3%;
+    font-size: large;
+    align-items: center;
 }
 
 .home_artigos {
 
     display: flex;
+    flex-direction: column;
     width: 90%;
     height: fit-content;
     padding: 20px;
@@ -120,11 +166,11 @@ button {
 .home_artigos_lista {
 
     display: flex;
-    width: 80%;
+    width: 90%;
     height: fit-content;
     padding: 20px;
     margin: 20px;
-    align-self: flex-start;
+    align-self: center;
     align-items: center;
     justify-content: space-between;
 }

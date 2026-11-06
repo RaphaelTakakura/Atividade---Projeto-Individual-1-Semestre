@@ -36,22 +36,28 @@
 
     </div>
 
-    <div class="formulario">
-        <span style="font-size: 30px; padding: 10px; color: rgb(230, 2, 127);"> < <span style="color:white"> Cadastro </span> > </span>
-        <br>
-        <span> Usuário : </span>
-        <input type="text" id="inp_usuario">
-        <div id="div_erro_usuario" class="texto_erro"></div>
-        <br>
-        <span> E-mail : </span>
-        <input type="text" id="inp_email">
-        <div id="div_erro_email" class="texto_erro"></div>
-        <br>
-        <span> Senha : </span>
-        <input type="password" id="inp_senha">
-        <span style="font-size: 15px; padding-left: 15px; padding-right: 15px;"> *Senha deve incluir ao menos um caractere especial, letra maiúscula, minúscula e mais de 10 dígitos.</span>
-        <div id="div_erro_senha" class="texto_erro"></div>
-        <br>
+    <div class="formulario_cadastro">
+
+        <div class="container_cadastro">
+
+            <span style="font-size: 30px; padding: 10px; color: rgb(230, 2, 127);"> < <span style="color:white"> Cadastro </span> > </span>
+            <br>
+            <span> Usuário : </span>
+            <input type="text" id="inp_usuario">
+            <div id="div_erro_usuario" class="texto_erro"></div>
+            <br>
+            <span> E-mail : </span>
+            <input type="text" id="inp_email">
+            <div id="div_erro_email" class="texto_erro"></div>
+            <br>
+            <span> Senha : </span>
+            <input type="password" id="inp_senha">
+            <span style="font-size: 15px; padding-left: 50px; padding-right: 15px;"> *Senha deve incluir ao menos um caractere especial, letra maiúscula, minúscula e mais de 10 dígitos.</span>
+            <div id="div_erro_senha" class="texto_erro"></div>
+            <br>
+            <button onclick="Cadastrar()"> Cadastrar </button>
+
+        </div>
     
         <div class="cadastro_interesses">
             
@@ -79,8 +85,6 @@
             </div>         
 
         </div>
-        
-        <button onclick="Cadastrar()"> Cadastrar </button>
     
     </div>
     
