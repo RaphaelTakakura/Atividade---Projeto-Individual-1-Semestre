@@ -134,6 +134,12 @@ button {
     align-items: center;
 }
 
+.classe_padronizacao_imagens {
+
+    width: 80%;
+    margin: 20px;
+}
+
 .home_artigos {
 
     display: flex;
@@ -227,8 +233,9 @@ button {
     padding: 10px;
 }
 
-.footer a {
+.classe_padronizacao_links {
 
     text-decoration: none;
     color: rgb(230, 2, 127);   
+    font-weight: bold;
 }
