@@ -175,6 +175,15 @@ button {
     justify-content: space-between;
 }
 
+.artigo_titulo {
+
+    color: white;
+    background-color: rgb(8, 0, 80);
+    padding: 20px;
+    border-radius: 10px;
+    corner-shape: notch;
+} 
+
 .navbar {
 
     display: flex;
@@ -201,4 +210,25 @@ button {
     background-color: rgb(8, 0, 80);
     border-bottom: 3px solid rgb(230, 2, 127);
     padding: 10px;
+}
+
+.footer {
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 100%;
+    margin-top: 5%;
+    box-sizing: border-box;
+    background-color: rgb(8, 0, 80);
+    border-top: 3px solid rgb(230, 2, 127);
+    padding: 10px;
+}
+
+.footer a {
+
+    text-decoration: none;
+    color: rgb(230, 2, 127);   
 }
