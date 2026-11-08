@@ -11,6 +11,12 @@ p {
     margin: 20px;
 }
 
+form {
+
+    width: 100%;
+    justify-content: center;
+}
+
 .formulario_login input {
 
     font-family: Chakra Petch;
@@ -136,6 +142,7 @@ button {
 
 .classe_padronizacao_imagens {
 
+    max-height: 600px;
     width: 80%;
     margin: 20px;
 }
@@ -190,6 +197,15 @@ button {
     corner-shape: notch;
 } 
 
+.comentario_titulo {
+
+    color: white;
+    background-color: rgb(230, 2, 127);
+    padding: 20px;
+    border-radius: 10px;
+    corner-shape: notch;
+}
+
 .navbar {
 
     display: flex;
@@ -238,4 +254,45 @@ button {
     text-decoration: none;
     color: rgb(230, 2, 127);   
     font-weight: bold;
+}
+
+.area_comentarios {
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(8, 0, 80);
+    width: 95%;
+    height: fit-content;
+    padding: 20px;
+}
+
+.container_comentarios {
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%; 
+    margin-bottom: 5%;
+    background-color: rgb(230, 2, 127);
+    color: white;
+    width: fit-content;
+    height: fit-content;
+    padding: 30px;
+    border-radius: 30px;
+    corner-shape: bevel;
+}
+
+.container_comentarios form {
+
+    text-align: center;
+}
+
+.container_comentarios textarea {
+
+    width: 80%;
 }
